@@ -37,5 +37,12 @@
         ((eq? (car list) value) #t)
         (else (member? (cdr list) value)))))
 
+;;;; Exercise done with friends @ café - this function checks if all the elements in a list are equals
+(define leq?
+    (lambda (l) 
+        (cond ((null? l) #t)
+            ((null? (cdr l)) #t)
+            ((eq? (car l) (car (cdr l))) (leq? (cdr l)))
+            (else #f))))
 
 
