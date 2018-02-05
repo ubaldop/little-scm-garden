@@ -10,17 +10,21 @@ Generally I use to discuss them with my friends [@marcosh](https://github.com/ma
 - [X] **Chapter 2**
 - [X] **Chapter 3**
 - [X] **Chapter 4**
-- [ ] **Chapter 5**
+- [X] **Chapter 5**
 - [ ] **Chapter 6**
 - [ ] **Chapter 7**
 - [ ] **Chapter 8**
 - [ ] **Chapter 9**
 - [ ] **Chapter 10**
 
-# Chapter 1
+## Chapter 1
 
-# Chapter 2
+## Chapter 2
 
-# Chapter 3
+## Chapter 3
 
-# Chapter 4
+## Chapter 4
+
+## Chapter 5
+
+[Answer](https://stackoverflow.com/questions/19353700/cond-and-and-or-in-scheme) to my doubt at page 89.
