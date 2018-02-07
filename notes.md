@@ -48,3 +48,18 @@ Page 95, when the authors say:
 we cannot generalize the `eqan?` function too because `equal?` itself is made using `eqan?`, so it cannot be replaced. See page 78 for a clarification of the same reason (where the authors suggest to replace every `eq?` occurrence with `eqan?`).  
 
 ## Chapter 6
+About being aware of shadows I liked a lot the following reading, available [here](http://ckplusplus.com/?page=1):
+
+> "The Eighth Commandment of The Little Schemer - use help functions to abstract from representations - is as obvious as most of the Ten  Commandments. Of course you would use other functions to support or create abstraction.
+  To make the case more clearly, the authors attempt to represent primitive numbers with collections of empty lists ( e.g. (()) for one,  (()()) for two). This is a new level of parenthetical obnoxiousness, and for a while, the reader may think - “Are they going to do this f or the rest of the book?” - because the authors then go on to demonstrate that a lot of the API used thus far in the book, works for this type of representation. But, then there’s lat?
+  Testing reveals that lat? doesn’t work as expected with such an abstraction. The chapter concludes with the two speakers exchanging:
+  Is that bad?
+  You must beware of shadows
+  This isn’t a very common thing to read in an instructional programming book, hell, you’d be blown away to see this in a cookbook. 
+  Searching around online, I couldn’t find too many people fleshing out a very thorough explanation other than a couple chat groups and most  users said “I guess they mean...but who cares?” or instead just complained about the book’s overall format. I know how I feel.
+  The phrase is out of place even in The Little Schemer, considering most chapters end with a recommendation to eat sweets. Nonetheless, it   is a perfect for what the authors want the reader to consider.
+  Going back to the Eighth Commandment above, it’s a considerable summation of coding cleaning activities programmers can read up on in   books such as Code Complete and Refactoring.  
+  But why end the chapter like this and call the chapter "Shadows"?
+  It’s obviously a parental-level warning in the family of “Keep your head up.” While a programmer can abstract a lot, the taller an  abstraction is built, the greater shadow it may be casting over operations that are still necessary or rarely necessary, which could even be more painful (read the first chapter of Release It!). The shadows cast by the edifice of your abstraction leads ultimately to bugs or worse a crack in the abstraction that can’t be patched.
+  It’s more delicate and literary warning than was given by Joel Spolsky about frameworks. Spolsky, as usual, is more confrontational, and  aside from the possibility of him yelling at me about this topics, Schemers’ warning sticks better. It’s like a cautioning given by an old woman near a dark wood.
+  However, these shadows are not cast by some creepy tree, but by our own code. It’s ultimately an admonishment to test, check your abstractions in places you wouldn’t necessarily use them and be just as thorough as the creators of the primary methods of your language.   And, of course, be afraid."
