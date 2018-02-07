@@ -32,3 +32,11 @@ Page 84, The final version of **Fourth Commandment** reminds me of what we discu
 Page 86, the function _member*_ exits from `or` condition as soon as `(eq? (car l) a)`, so it uses the first `or` short circuit/lazy evaluation returning true to avoid performing next recursive steps.  
   
 [Answer](https://stackoverflow.com/questions/19353700/cond-and-and-or-in-scheme) to my doubt at page 89.  
+
+Page 90, the `eqlist` function asks 9 questions because, given the two lists `l1` and `l2` as arguments it does:
+
+- if `l1` is empty and `l2` is either empty, or an (atom | tail) or a (sublist | tail) 
+- if `l1` is (atom | tail) and `l2` is either empty, or an (atom | tail) or a (sublist | tail) 
+- if `l1` is (sublist | tail) and `l2` is either empty, or an (atom | tail) or a (sublist | tail) 
+
+for a total of 9 questions!
