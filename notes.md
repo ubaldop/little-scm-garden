@@ -27,5 +27,8 @@ Generally I use to discuss them with my friends [@marcosh](https://github.com/ma
 
 ## Chapter 5
 
+Page 84, The final version of **Fourth Commandment** reminds me of what we discussed together during previous meeting. See [here](https://gist.github.com/marcosh/208b669b0e1228f3e684835e3adc9ccd)  
+  
+Page 86, the function _member*_ exits from `or` condition as soon as `(eq? (car l) a)`, so it uses the first `or` short circuit/lazy evaluation returning true to avoid performing next recursive steps.  
+  
 [Answer](https://stackoverflow.com/questions/19353700/cond-and-and-or-in-scheme) to my doubt at page 89.  
-Page 84, The final version of **Fourth Commandment** reminds me of what we discussed together during previous meeting. See [here](https://gist.github.com/marcosh/208b669b0e1228f3e684835e3adc9ccd)
