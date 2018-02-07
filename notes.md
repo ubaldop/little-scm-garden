@@ -11,7 +11,7 @@ Generally I use to discuss them with my friends [@marcosh](https://github.com/ma
 - [X] **Chapter 3**
 - [X] **Chapter 4**
 - [X] **Chapter 5**
-- [ ] **Chapter 6**
+- [X] **Chapter 6**
 - [ ] **Chapter 7**
 - [ ] **Chapter 8**
 - [ ] **Chapter 9**
@@ -39,4 +39,12 @@ Page 90, the `eqlist` function asks 9 questions because, given the two lists `l1
 - if `l1` is (atom | tail) and `l2` is either empty, or an (atom | tail) or a (sublist | tail) 
 - if `l1` is (sublist | tail) and `l2` is either empty, or an (atom | tail) or a (sublist | tail) 
 
-for a total of 9 questions!
+for a total of 9 questions!  
+
+Page 95, when the authors say:
+
+> Can all functions that use eq ? and = be generalized by replacing eq? and = by the function equal ?
+
+we cannot generalize the `eqan?` function too because `equal?` itself is made using `eqan?`, so it cannot be replaced. See page 78 for a clarification of the same reason (where the authors suggest to replace every `eq?` occurrence with `eqan?`).  
+
+## Chapter 6
