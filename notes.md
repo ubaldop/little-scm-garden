@@ -63,3 +63,25 @@ About being aware of shadows I liked a lot the following reading, available [her
   It’s obviously a parental-level warning in the family of “Keep your head up.” While a programmer can abstract a lot, the taller an  abstraction is built, the greater shadow it may be casting over operations that are still necessary or rarely necessary, which could even be more painful (read the first chapter of Release It!). The shadows cast by the edifice of your abstraction leads ultimately to bugs or worse a crack in the abstraction that can’t be patched.
   It’s more delicate and literary warning than was given by Joel Spolsky about frameworks. Spolsky, as usual, is more confrontational, and  aside from the possibility of him yelling at me about this topics, Schemers’ warning sticks better. It’s like a cautioning given by an old woman near a dark wood.
   However, these shadows are not cast by some creepy tree, but by our own code. It’s ultimately an admonishment to test, check your abstractions in places you wouldn’t necessarily use them and be just as thorough as the creators of the primary methods of your language.   And, of course, be afraid."
+  
+## Chapter 7
+
+#### Page 111
+I have a doubt about the usage of the primitive `eq?` function in **DrRacket**. This happens because I am trying to implement the `set?` function as defined at the start of this chapter (see page 111). This function requires to use `member?` function in order to check if the current list of atoms passed as input actually is a set.
+`member?` function needs to use an equality check in order to assess if an atom passed as argument is member of the list of atom passed as argument too.
+I perfomed this equality using `eq?`. Indeed, doing the following operation with DrRacked and **R5RS** as interpreter led to some errors:
+
+```scheme
+> (eq? 'a 'a)
+#t
+> ;;; here something strange happens ...
+> (define list '('a 'b 'b 'c))
+> (car (cdr list))
+'b
+> (car (cdr (cdr list)))
+'b
+> (eq? (car (cdr list)) (car (cdr (cdr list))))
+#f
+```
+
+Actually, [looking at Stack Overflow]() it seems to me I have to use `eqv?` instead, that basically checks equality for the value itself. Indeed, `eq?` predicate is used to check whether its two parameters respresent the same object in memory, not if they are properly equal in the sense of the value.  
