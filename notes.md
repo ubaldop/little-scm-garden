@@ -85,3 +85,18 @@ I perfomed this equality using `eq?`. Indeed, doing the following operation with
 ```
 
 Actually, [looking at Stack Overflow]() it seems to me I have to use `eqv?` instead, that basically checks equality for the value itself. Indeed, `eq?` predicate is used to check whether its two parameters respresent the same object in memory, not if they are properly equal in the sense of the value.  
+
+#### Page 113
+In the first definition of `subset` is it again worth to note that the author uses the `cond` each time is assessing two or more predicates over a recursion step.
+
+I mean, for example:
+
+```scheme
+ ...(cond 
+        (null? set1) #t)
+        (else (cond   ;;;I mean here, this could be slightly simplified
+             ((member? (car set1) set2) ...)
+             (else #f)))
+```
+
+generally I use to do this semplification upfront, while within the book it is performed in two different steps. Maybe it is better how the author does since the recursive step over a not empty list basically has two check two stuff (i.e.: in the above example 1 - if the current element of first set is member of second set too, 2 - else returns false).  
