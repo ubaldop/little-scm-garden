@@ -100,3 +100,12 @@ I mean, for example:
 ```
 
 generally I use to do this semplification upfront, while within the book it is performed in two different steps. Maybe it is better how the author does since the recursive step over a not empty list basically has two check two stuff (i.e.: in the above example 1 - if the current element of first set is member of second set too, 2 - else returns false).  
+
+#### Page 114
+
+Here the authors define `eqset?` through the assymetric relation of subsets. I mean, according to the following:
+
+Given `≤` as a binary relation (in our case subset) over a set, then
+if `a ≤ b` and `b ≤ a`, then `a = b` (antisymmetry: two distinct elements cannot be related in both directions).
+
+See on [Wikipedia](https://en.wikipedia.org/wiki/Partially_ordered_set#Formal_definition)
