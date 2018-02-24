@@ -12,7 +12,7 @@ Generally I use to discuss them with my friends [@marcosh](https://github.com/ma
 - [X] **Chapter 4**
 - [X] **Chapter 5**
 - [X] **Chapter 6**
-- [ ] **Chapter 7**
+- [X] **Chapter 7**
 - [ ] **Chapter 8**
 - [ ] **Chapter 9**
 - [ ] **Chapter 10**
@@ -109,3 +109,11 @@ Given `≤` as a binary relation (in our case subset) over a set, then
 if `a ≤ b` and `b ≤ a`, then `a = b` (antisymmetry: two distinct elements cannot be related in both directions).
 
 See on [Wikipedia](https://en.wikipedia.org/wiki/Partially_ordered_set#Formal_definition)
+
+#### Page 120-122
+
+Here the authors define a concept of finite function and one to one function using a set containing pairs. Personally I did not grasp the complete meaning behind this introduction so far.
+
+First of all, why we can represent a finite function as ''_a list of pairs in which no first element of any pair is the same as any other first element?_''  
+
+Again, what is a _fullfun_? Why it is renamed to _one-to-one_ later?
