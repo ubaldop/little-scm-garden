@@ -122,7 +122,7 @@ Again, what is a _fullfun_? Why it is renamed to _one-to-one_ later?
 
 #### Page 133
 
-In the last example of the page there's the definition of `rember` in the form of a curried lambda over `instert-g`. Here, the authors ask:
+In the last example of the page there's the definition of `rember` in the form of a curried lambda over `insert-g`. Here, the authors ask:
 
 > What role does #f play?
 
