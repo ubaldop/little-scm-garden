@@ -117,3 +117,13 @@ Here the authors define a concept of finite function and one to one function usi
 First of all, why we can represent a finite function as ''_a list of pairs in which no first element of any pair is the same as any other first element?_''  
 
 Again, what is a _fullfun_? Why it is renamed to _one-to-one_ later?
+
+## Chapter 8
+
+#### Page 133
+
+In the last example of the page there's the definition of `rember` in the form of a curried lambda over `instert-g`. Here, the authors ask:
+
+> What role does #f play?
+
+According to me it is just a placeholder since the inner anonymous function would expect three arguments and here do we need just the third argument (i.e.: the cdr of `l`).  
