@@ -133,3 +133,16 @@ At which kind of function could the collector function be compared to? Is this s
 
 #### Page 146
 Is the approach defined in the collector example for `evens-only*&co` a way to represent stacked HOF?  
+
+#### Final Note for Chapter 8
+
+Sometimes while I am trying the examples using DrRacket I come across this error:
+
+```scheme
+ application: not a procedure;
+ expected a procedure that can be applied to arguments
+  given: XXX
+  arguments...: [none]
+```
+That's basically sometimes I define function with too much parentheses. This for interpreter means the following:
+it expects to evaluate what's wrapped in parentheses to a function. However when the evaluating expression does is not a procedure it is required to avoid these parentheses.
