@@ -127,3 +127,6 @@ In the last example of the page there's the definition of `rember` in the form o
 > What role does #f play?
 
 According to me it is just a placeholder since the inner anonymous function would expect three arguments and here do we need just the third argument (i.e.: the cdr of `l`).  
+
+#### Page 141
+At which kind of function could the collector function be compared to? Is this something like a fold?  
