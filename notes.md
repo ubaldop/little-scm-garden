@@ -13,7 +13,7 @@ Generally I use to discuss them with my friends [@marcosh](https://github.com/ma
 - [X] **Chapter 5**
 - [X] **Chapter 6**
 - [X] **Chapter 7**
-- [ ] **Chapter 8**
+- [X] **Chapter 8**
 - [ ] **Chapter 9**
 - [ ] **Chapter 10**
 
@@ -130,3 +130,6 @@ According to me it is just a placeholder since the inner anonymous function woul
 
 #### Page 141
 At which kind of function could the collector function be compared to? Is this something like a fold?  
+
+#### Page 146
+Is the approach defined in the collector example for `evens-only*&co` a way to represent stacked HOF?  
