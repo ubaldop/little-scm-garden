@@ -19,6 +19,33 @@ Generally I use to discuss them with my friends [@marcosh](https://github.com/ma
 
 ## Chapter 1
 
+Do you know what is the actual name of the `'` operator? Is it named **quote**?  
+
+---
+
+#### Page 8
+
+The authors say that writing `(cons s l)` with `s` and `l` both atoms, the interpreter should not provide a valid response. However, using the R5RS interpreter of **DrRacket**, if I write:
+
+```scheme
+> (cons 'a 'b)
+```
+I get the following answer:
+
+```scheme
+(a . b)
+```
+Instead by doing:
+
+```scheme
+> (cons 'a '(b))
+```
+I get:
+```scheme
+(a b)
+```
+So, are both `(a . b)` and `(a b)` the same? Is `(a . b)` a **pair**?
+
 ## Chapter 2
 
 ## Chapter 3
