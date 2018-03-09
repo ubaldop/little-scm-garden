@@ -145,6 +145,8 @@ First of all, why we can represent a finite function as ''_a list of pairs in wh
 
 Again, what is a _fullfun_? Why it is renamed to _one-to-one_ later?
 
+As discussed with @marcosh and @geodoo, basically these functions definitions are the same of the mathematical ones. For example, the function that the authors here name as **one-to-one**, is the injective function where for each element of the domain must correspond only one element of the codomain.  
+
 ## Chapter 8
 
 #### Page 133
