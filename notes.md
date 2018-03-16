@@ -175,3 +175,7 @@ Sometimes while I am trying the examples using DrRacket I come across this error
 ```
 That's basically sometimes I define function with too much parentheses. This for interpreter means the following:
 it expects to evaluate what's wrapped in parentheses to a function. However when the evaluating expression does is not a procedure it is required to avoid these parentheses.
+
+## Chapter 9
+
+## Chapter 10
