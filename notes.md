@@ -178,4 +178,8 @@ it expects to evaluate what's wrapped in parentheses to a function. However when
 
 ## Chapter 9
 
+#### Page 151
+
+That's the best _partial function_ definition I've seen so far!
+
 ## Chapter 10
