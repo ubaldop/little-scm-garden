@@ -196,4 +196,16 @@ That's the best _partial function_ definition I've seen so far!
 
 This is the Collatz conjecture. See [here](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
+#### Page 156
+
+```scheme
+(define A
+    (lambda (n m)
+                (cond
+                    ((zero? n) (add1 m))
+                    ((zero? m) (A (sub1 n) 1))
+                    (else (A (sub1 n) (A n (sub1 m )))))))
+```
+This is the Ackermann (1896-1962) function. See [here](https://en.wikipedia.org/wiki/Ackermann_function).  
+
 ## Chapter 10
