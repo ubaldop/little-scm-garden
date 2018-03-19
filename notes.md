@@ -182,4 +182,18 @@ it expects to evaluate what's wrapped in parentheses to a function. However when
 
 That's the best _partial function_ definition I've seen so far!
 
+#### Page 155
+
+```scheme
+(define C
+  (lambda (n)
+            (cond (
+              (one? n) 1)
+              (else (cond
+                        ((even? n) (C (+ n 2)))
+                        (else (C (add1 (x 3 n)))))))))
+```
+
+This is the Collatz conjecture. See [here](https://en.wikipedia.org/wiki/Collatz_conjecture).
+
 ## Chapter 10
