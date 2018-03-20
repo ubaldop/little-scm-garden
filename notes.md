@@ -184,7 +184,7 @@ That's the best _partial function_ definition I've seen so far!
 
 #### Page 152
 
-_align_ function, although violating **The Seventh Commandment** can still be considered a partial function because for every provided argument it yields to a value.
+_align_ function, although violating **The Seventh Commandment** can still be considered a total function because for every provided argument it yields to a value.
 
 #### Page 155
 
