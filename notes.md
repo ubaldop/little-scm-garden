@@ -212,4 +212,7 @@ This is the Collatz conjecture. See [here](https://en.wikipedia.org/wiki/Collatz
 ```
 This is the Ackermann (1896-1962) function. See [here](https://en.wikipedia.org/wiki/Ackermann_function).  
 
+#### Y-Combinator definition
+In this chapter there is a very good description about the Y-Combinator built with Scheme. I found a very interesting post about it, that helped me in claryfing this part of the book a lot. [Here it is](http://www.catonmat.net/blog/derivation-of-ycombinator/).
+
 ## Chapter 10
